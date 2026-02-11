@@ -1,0 +1,82 @@
+:root {
+  /* Colors */
+  --primary-color: #2563eb;
+  --neutral-color: #94a3b8;
+  --white-color: #e2e8f0;
+  --black-color: #0e141b;
+  --background-color: #000000;
+  
+  /* Spacing system */
+  --space-xs: 0.125rem;
+  --space-sm: 0.25rem;
+  --space-md: 0.5rem;
+  --space-lg: 1rem;
+  --space-xl: 1.5rem;
+  --space-2xl: 2rem;
+  --space-3xl: 3rem;
+  --space-4xl: 4rem;
+  --space-5xl: 5rem;
+  --space-6xl: 6rem;
+  --space-7xl: 8rem;
+  --space-8xl: 10rem;
+  --space-9xl: 12rem;
+  
+  /* Typography */
+  --font-sans: "Be Vietnam Pro", system-ui, sans-serif;
+  --font-serif: "Gabarito", ui-serif, serif;
+  
+  /* Font sizes */
+  --text-xs: 0.875rem;
+  --text-sm: 1rem;
+  --text-base: 1.125rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 1.75rem;
+  --text-3xl: 2rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 2.5rem;
+  --text-6xl: 3rem;
+  --text-7xl: 3.75rem;
+  --text-8xl: 4.5rem;
+  --text-9xl: 6rem;
+  
+  /* Line heights */
+  --line-height-xs: 1.125rem;
+  --line-height-sm: 1.25rem;
+  --line-height-base: 1.625rem;
+  --line-height-lg: 1.75rem;
+  --line-height-xl: 1.813rem;
+  --line-height-2xl: 2.125rem;
+  --line-height-3xl: 2.375rem;
+  --line-height-4xl: 2.688rem;
+  --line-height-5xl: 3rem;
+  --line-height-6xl: 3.625rem;
+  --line-height-7xl: 1;
+  --line-height-8xl: 4.875rem;
+  --line-height-9xl: 6.625rem;
+  
+  /* Custom properties */
+  --tracking-tightest: -2px;
+  --tracking-tighter: -1px;
+  --tracking-tight: -0.25px;
+  --tracking-normal: 0;
+  --tracking-wide: 0.25px;
+  --tracking-wider: 0.5px;
+  --tracking-widest: 1px;
+  
+  /* Border radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+  --radius-3xl: 2rem;
+  --radius-full: 9999px;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}

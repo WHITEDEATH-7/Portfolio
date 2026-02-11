@@ -1,0 +1,23 @@
+{
+  "name": "portfolio-vanilla",
+  "version": "1.0.0",
+  "description": "A vanilla HTML, CSS, and JavaScript portfolio based on AstroZen",
+  "main": "index.html",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "deploy": "gh-pages -d . -b gh-pages",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "portfolio",
+    "vanilla-js",
+    "html",
+    "css"
+  ],
+  "author": "Alejandro Múnez",
+  "license": "MIT",
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}

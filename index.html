@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Developer focused on building scalable web applications and backend systems. specialize in Java-based backend development, APIs, databases, and modern web technologies.">
+    <meta name="author" content="Tushar">
+    <title>Tushar — Full-Stack Developer</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Tushar — Full-Stack Developer">
+    <meta property="og:description" content="Developer focused on building scalable web applications and backend systems. specialize in Java-based backend development, APIs, databases, and modern web technologies.">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Tushar — Full-Stack Developer">
+    <meta property="twitter:description" content="Developer focused on building scalable web applications and backend systems. specialize in Java-based backend development, APIs, databases, and modern web technologies.">
+    <meta property="twitter:image" content="./assets/images/zen-og.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;800&family=Gabarito:wght@400;600;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./styles/variables.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/animations.css">
+</head>
+<body class="bg-black font-sans">
+    <header class="header sticky top-0 z-50 mx-auto flex max-w-5xl justify-between bg-black px-5 py-6">
+        <a href="/" aria-label="Home link">
+            <img class="logo rounded-full" src="./assets/images/tjsmall.jpeg" width="45" height="45" alt="website logo">
+        </a>
+
+        <button type="button" class="menu-toggle px-1.5 text-neutral sm:hidden" aria-expanded="false" aria-controls="main-menu">
+            <svg class="menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 12H21M3 6H21M3 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+
+        <!-- Right Top Fixed Menu -->
+        <nav class="fixed-menu fixed top-6 right-6 z-50 hidden sm:block" id="fixed-menu">
+            <ul class="flex flex-col gap-3">
+                <li class="relative">
+                    <a class="fixed-nav-item relative block px-4 py-2 text-sm font-medium text-neutral transition-all duration-300 hover:text-white" href="#hero">
+                        Home
+                        <span class="indicator absolute left-0 top-0 h-full w-1 bg-primary opacity-0 transition-opacity duration-300"></span>
+                    </a>
+                </li>
+                <li class="relative">
+                    <a class="fixed-nav-item relative block px-4 py-2 text-sm font-medium text-neutral transition-all duration-300 hover:text-white" href="#experience">
+                        Experience
+                        <span class="indicator absolute left-0 top-0 h-full w-1 bg-primary opacity-0 transition-opacity duration-300"></span>
+                    </a>
+                </li>
+                <li class="relative">
+                    <a class="fixed-nav-item relative block px-4 py-2 text-sm font-medium text-neutral transition-all duration-300 hover:text-white" href="#projects">
+                        Projects
+                        <span class="indicator absolute left-0 top-0 h-full w-1 bg-primary opacity-0 transition-opacity duration-300"></span>
+                    </a>
+                </li>
+                <li class="relative">
+                    <a class="fixed-nav-item relative block px-4 py-2 text-sm font-medium text-neutral transition-all duration-300 hover:text-white" href="#about">
+                        About
+                        <span class="indicator absolute left-0 top-0 h-full w-1 bg-primary opacity-0 transition-opacity duration-300"></span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <nav class="mobile-menu absolute top-20 right-5 hidden rounded-xl border border-neutral/40 bg-black px-4 py-5 text-neutral sm:static sm:block sm:border-0 sm:bg-transparent sm:p-0" id="main-menu">
+            <ul class="nav-list gap-2 sm:flex">
+                <li class="relative">
+                    <a class="nav-item relative block p-2 text-sm font-medium transition-all duration-500 after:absolute after:bottom-0 after:left-2/4 after:h-2 after:w-1 after:-translate-x-2/4 after:text-primary after:opacity-0 after:content-['•'] hover:text-white" href="#experience">
+                        Experience
+                    </a>
+                </li>
+                <li class="relative">
+                    <a class="nav-item relative block p-2 text-sm font-medium transition-all duration-500 after:absolute after:bottom-0 after:left-2/4 after:h-2 after:w-1 after:-translate-x-2/4 after:text-primary after:opacity-0 after:content-['•'] hover:text-white" href="#projects">
+                        Projects
+                    </a>
+                </li>
+                <li class="relative">
+                    <a class="nav-item relative block p-2 text-sm font-medium transition-all duration-500 after:absolute after:bottom-0 after:left-2/4 after:h-2 after:w-1 after:-translate-x-2/4 after:text-primary after:opacity-0 after:content-['•'] hover:text-white" href="#about">
+                        About
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        
+        <!-- Current Section Indicator in Header -->
+        <div class="current-section-indicator hidden sm:block">
+            <span class="current-section-text text-sm font-medium text-primary uppercase tracking-wider">
+                Currently Viewing: <span id="current-section">Home</span>
+            </span>
+        </div>
+    </header>
+
+    <main class="mx-auto max-w-3xl px-5">
+        <section class="hero py-24 md:py-32" id="hero">
+            <h1 class="hero-title mb-1.5 font-serif text-7xl font-bold tracking-tightest text-white sm:text-8xl md:mb-0 md:text-9xl">
+                Tushar 
+            </h1>
+            <p class="hero-subtitle mb-9 font-serif text-4xl leading-[46px] font-bold tracking-tighter text-primary sm:text-5xl md:text-6xl">
+                Full-Stack Developer
+            </p>
+            <p class="hero-summary mb-16 text-base font-normal text-neutral md:text-lg">
+                Developer focused on building scalable web applications and backend systems. specialize in Java-based backend development, APIs, databases, and modern web technologies.
+            </p>
+
+            <a class="cta-button inline-block rounded-full bg-primary px-8 py-5 text-sm leading-5 font-medium text-[#fff]" href="mailto:tusharjadav009@gmail.com">Get in Touch</a>
+        </section>
+
+        <section class="experience" id="experience">
+            <div class="section-header">
+                <h2 class="section-title">Experience</h2>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="job-header">
+                        <h3 class="company">BrainyBeam</h3>
+                        <div class="position-info">
+                            <span class="position">Django Developer</span>
+                            <span class="date">May 2022 - Sept 2022</span>
+                        </div>
+                    </div>
+                    <ul class="job-summary">
+                        <li>Implemented advanced memory management and code optimization techniques, resulting in a reduction in application load time by 40% and a decrease in crashes by 25%. This significantly improved user experience and increased user retention by 20%.</li>
+                        <li>I led a team of developers in building and integrating new features using Jetpack Android components such as LiveData and ViewModel. This enabled us to build scalable and maintainable applications, reducing the crash rate by 20% and speeding up the time to delivery of new features by 15%.</li>
+                        <li>Integrated Google Pay for in-app purchases, resulting in a 35% increase in mobile transaction revenue. Additionally, implemented Firebase Analytics to gain insights into user behavior, enabling data-driven optimizations and a 30% increase in user retention.</li>
+                    </ul>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="job-header">
+                        <h3 class="company">SpringWorks</h3>
+                        <div class="position-info">
+                            <span class="position">Backend Developer</span>
+                            <span class="date">Feb 2024 - May 2024</span>
+                        </div>
+                    </div>
+                    <ul class="job-summary">
+                        <li>Designed and developed backend services using Spring Boot, focusing on building scalable RESTful APIs and reusable business logic to support application features efficiently. This approach improved development productivity and reduced future maintenance overhead.</li>
+                        <li>Implemented secure authentication and data protection mechanisms, including encryption and access control, to safeguard sensitive user data. These enhancements strengthened system security, increased reliability, and significantly reduced unauthorized access attempts.</li>
+                    </ul>
+                </div>
+                
+                
+                    
+            
+        </section>
+
+        <section class="projects" id="projects">
+            <div class="section-header">
+                <h2 class="section-title">Projects</h2>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img class="project-image" src="./assets/images/wz.png" alt="WorkZen">
+                    <div class="project-content">
+                        <h3 class="project-title">WorkZen</h3>
+                        <p class="project-description">An HRMS platform that streamlines workforce management with integrated attendance, leave, payroll, and analytics features.</p>
+                        <div class="project-links">
+                            <a class="project-link" href="https://github.com/WHITEDEATH-7/WorkZen" target="_blank">Source</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img class="project-image" src="./assets/images/mm.png" alt="MyMoney">
+                    <div class="project-content">
+                        <h3 class="project-title">MyMoney</h3>
+                        <p class="project-description">Expense management system with OCR receipt scanning, multi-currency support, and multi-level approval workflows.</p>
+                        <div class="project-links">
+                            <a class="project-link" href="https://github.com/WHITEDEATH-7/Expense-Management" target="_blank">Source</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img class="project-image" src="./assets/images/bf.png" alt="Briefly">
+                    <div class="project-content">
+                        <h3 class="project-title">Briefly</h3>
+                        <p class="project-description">AI-powered news summarizer with sentiment analysis that extracts key information from articles automatically.</p>
+                        <div class="project-links">
+                            <a class="project-link" href="https://github.com/WHITEDEATH-7/Briefly" target="_blank">Source</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="section-header">
+                <h2 class="section-title">About</h2>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Hi, I’m Tushar, a Full-Stack Developer passionate about building scalable and well-architected applications. My work focuses on Java-based backend systems, APIs, databases, and modern web technologies.
+                    </p>
+                    <p>
+                        I enjoy creating software that balances performance, security, and simplicity — whether that’s a backend service, a full-stack application, or a system designed to grow with its users.
+                    </p>
+                </div>
+                <img class="about-image" src="./assets/images/tjbig.jpeg" alt="TJ">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer w-full border-t border-neutral/20 px-5 pt-5 pb-8 text-center text-white">
+        <div class="social-links mb-5 flex flex-wrap justify-center gap-x-5 text-xs">
+            <a href="https://x.com/jadavtushar4u" target="_blank" class="social-link inline-block px-4 py-3 hover:text-primary">
+                Twitter
+            </a>
+            <a href="https://www.linkedin.com/in/tusharjadav" target="_blank" class="social-link inline-block px-4 py-3 hover:text-primary">
+                LinkedIn
+            </a>
+            <a href="https://github.com/WHITEDEATH-7" target="_blank" class="social-link inline-block px-4 py-3 hover:text-primary">
+                Github
+            </a>
+            <a href="https://www.youtube.com/@Tusar-Jadav" target="_blank" class="social-link inline-block px-4 py-3 hover:text-primary">
+                Youtube
+            </a>
+            <a href="https://www.instagram.com/tusar.77777/" target="_blank" class="social-link inline-block px-4 py-3 hover:text-primary">
+                Instagram
+            </a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./scripts/animations.js"></script>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
